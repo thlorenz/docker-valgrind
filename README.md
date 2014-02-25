@@ -4,12 +4,10 @@
 
 Assuming your project `Makefile` has a `grind` target which runs [valgrind](http://valgrind.org/) on it.
 
-```sh
-echo 'from thlorenz/valgrind' > Dockerfile
+    echo 'from thlorenz/valgrind' > Dockerfile
 
-docker build -t="my_make" . 
-docker run -i -rm my_make grind
-```
+    docker build -t="my_make" . 
+    docker run -i -rm my_make grind
 
 ## Why do I need this?
 
