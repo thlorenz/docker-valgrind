@@ -11,5 +11,5 @@ run apt-get install -y valgrind
 entrypoint [ "/usr/bin/make" ]
 cmd [ "--help" ]
 
-onbuild add src.tar.gz /src
+onbuild add . /src
 onbuild workdir /src
